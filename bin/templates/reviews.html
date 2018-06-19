@@ -9,6 +9,7 @@
 	<div th:each="review: ${reviews}">
 	<li>	 
 	<a th:href="@{/review(id=${review.id})}" th:text="${review.title}"></a>
+	<img th:src="@{${review.imageUrl}}"/>
 	</li>
 	</div>
 
